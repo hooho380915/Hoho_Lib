@@ -10,6 +10,8 @@
 * 20200318        Alex Chen       Create
 * 20200618      Alex Chen           Modify
 * 流程改善- Git Study -V2 => LIB_Chatter-Date-DB
+* 20200618      Alex Chen           Modify
+* 流程改善- Git Study -V3 => LIB_Chatter-DB
 ************************************** */
 public without sharing class Lib_Chatter {
 
