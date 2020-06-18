@@ -1,0 +1,35 @@
+<template>
+    <template if:true={contact.data}>
+        <lightning-card title="My Contact Record" icon-name="standard:contact">
+            <div class="slds-m-around_medium">
+                <p>{name}</p>
+                <p>{title}</p>
+                <p>
+                    <lightning-formatted-phone value={phone}></lightning-formatted-phone>
+                </p>
+                <p>
+                    <lightning-formatted-email value={email}></lightning-formatted-email>
+                </p>
+            </div>
+        </lightning-card>
+    </template>
+    <!--
+        <template if:true={contact.error}>
+            <c-error-panel errors={contact.error}></c-error-panel>
+        </template>
+        -->
+    <template if:true={account.data}>
+        <lightning-card title="My Account Record" icon-name="standard:account">
+            <div class="slds-m-around_medium">
+                <p>{aname}</p>
+                <p>
+                    <lightning-formatted-phone value={aPhone}></lightning-formatted-phone>
+                </p>
+                <lightning-input label="Rating" value={aRating}></lightning-input>
+                <lightning-input-field field-name="Rating" value={aRating} >
+                </lightning-input-field>
+            </div>
+        </lightning-card>
+    </template>
+
+</template>

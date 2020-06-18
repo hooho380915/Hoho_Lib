@@ -1,0 +1,60 @@
+<template>
+
+    <lightning-card title="ApexWireMethodToProperty" icon-name="custom:custom63">
+
+        <div class="slds-m-around_medium">
+            <!--
+            <template if:true={contacts.data}>                
+                <template for:each={contacts.data} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>                
+            </template>
+            
+            <template if:true={contacts.error}>                
+                <c-error-panel errors={contacts.error}></c-error-panel>                
+            </template>
+            -->
+            <template if:true={accounts.data}>
+                Accounts Success:
+                    <template for:each={accounts.data} for:item="account">
+                        <p key={account.Id}>{account.Name} : {account.Phone}: {account.Site}</p>                                                
+                    </template>
+                    <div class="slds-p-around_medium lgc-bg">
+                        <lightning-tree-grid 
+                            data={accounts} key-field="name">
+                        </lightning-tree-grid>
+                    </div>
+                <br/>
+                Single Accounts Success:
+                <br />
+                <template if:true={acc}>
+                    {acc.Name} : {acc.Phone} : {acc.Site}
+                </template>
+                <br />
+                Single Accounts 1:
+                <br />
+                <template if:true={acc1.data}>
+                    {acc1.data.Name} : {acc1.data.Phone} : {acc1.data.Site}
+               
+                    <br/>
+                    <lightning-card title="acc1 Record" icon-name="standard:account">
+                        
+                            <lightning-input label="Name" value={acc1.data.Name} data-field="Name"></lightning-input>
+                            <lightning-input label="Phone" value={acc1.data.Phone} data-field="Phone"></lightning-input>
+                            <lightning-input label="Site" value={acc1.data.Site} data-field="Site"></lightning-input>                            
+                            <br />                            
+                                                    
+                    </lightning-card>
+                </template>
+
+            </template>
+            <!-- 
+            <template if:true={accounts.error}>
+                accounts error:
+            </template>
+            -->
+        </div>
+
+    </lightning-card>
+
+</template>

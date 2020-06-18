@@ -1,0 +1,21 @@
+<template>
+    <template if:true={account.data}>
+        <lightning-card title="Update Account Record" icon-name="standard:account">
+            <div class="slds-m-around_medium">                     
+            <lightning-record-edit-form 
+                record-id={recordId} 
+                object-api-name={objectApiName} >
+                <lightning-input label="Name"  value={account.data.fields.Name.value}    onchange={handleNameChange}   data-field="Name"></lightning-input>            
+                <lightning-input label="Phone" value={account.data.fields.Phone.value}   onchange={handlePhoneChange}  data-field="Phone"></lightning-input>
+                <!--
+                    <lightning-input label="Rating" value={account.data.fields.Rating.value} data-field="Rating"></lightning-input>
+                -->
+                <lightning-input-field field-name="Rating" data-field="Rating" ></lightning-input-field> 
+                <br/>
+                <lightning-button label="Create Account" onclick={CreateAccount}></lightning-button>
+                <lightning-button label="Update Account" onclick={UpdateAccount}></lightning-button>
+            </lightning-record-edit-form>
+            </div>
+        </lightning-card>   
+    </template>
+</template>

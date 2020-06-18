@@ -1,0 +1,19 @@
+<template>
+    <!--
+       大括弧內的變數是類似 JavaScript 沒被定義也不會錯
+       但若在同名js 內有運算,則會binding
+       onchange 後面的 funcion 會傳入 event
+   -->
+    <lightning-card title='Hello' icon-name="custom:custom14">
+        <p> Hi , {Name1} :{Name2} : </p>
+        <p>
+            <lightning-input type="text" onchange={handleChange1} value={Name1} label='myTest1'>
+            </lightning-input>
+        </p>
+        <p>
+            <lightning-input type="text" onchange={handleChange2} value={Name2} label='myTest2'>
+            </lightning-input>
+        </p>
+
+    </lightning-card>
+</template>

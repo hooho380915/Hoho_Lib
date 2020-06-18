@@ -1,0 +1,29 @@
+<template>
+
+    <lightning-card title="RecordViewFormDynamicContact" icon-name="standard:contact">
+        <!--
+            lightning-record-view-form=> 只能檢視 => lightning-input-field 在此不作用
+            lightning-record-edit-form=> 編輯/檢視皆可,
+            =>
+            很神奇的是, 因為 meta.xml 設定 targetConfig=> objects => object => contact
+            自動將 @recordId @objectApiName 對應上
+
+        -->
+        <div class="slds-m-around_medium">
+            <lightning-record-view-form object-api-name={objectApiName} record-id={recordId}>
+                <lightning-output-field field-name='Name'></lightning-output-field>
+                <lightning-output-field field-name='Title'></lightning-output-field>
+                <lightning-output-field field-name='Phone'></lightning-output-field>                
+                <lightning-output-field field-name='Email'></lightning-output-field>                
+                <lightning-input-field  field-name="Birthdate"></lightning-input-field>
+            </lightning-record-view-form>
+            <lightning-record-edit-form id="recordEditForm" record-id={recordId} object-api-name={objectApiName}>
+                <lightning-output-field field-name='LastName'></lightning-output-field>
+                <lightning-input-field  field-name="FirstName"></lightning-input-field>
+                <lightning-input-field  field-name="LastName"></lightning-input-field>
+            </lightning-record-edit-form>
+        </div>
+
+    </lightning-card>
+
+</template>

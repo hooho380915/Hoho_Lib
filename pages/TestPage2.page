@@ -1,0 +1,117 @@
+<apex:page showHeader="false" sidebar="false" controller="clsTest2">
+
+    <style>
+        div.div-demo {
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        table.demo {
+            table-layout: fixed;
+            border: 0px solid black;
+        }
+
+        table.demo td,
+        th {
+            width: 200px;
+            text-align: left;
+        }
+    </style>
+<apex:form >
+    <apex:pageBlock >
+    <table class="demo">
+    
+        <tr>
+    
+            <th>
+                需要技術評估的有 1. Lightning客製畫面開發，畫面有更新版， 另外，客戶有提出是不是可以固定上方區塊， 滑鼠移動時只移動下方區塊。
+            </th>
+    
+        </tr>
+    
+    </table>
+    </apex:pageBlock>
+    <apex:pageBlock >
+        <div class="div-demo">
+            <apex:pageBlock id="block1">                
+                <apex:pageBlockSection >
+                    <apex:outputLabel value="Name"></apex:outputLabel>
+                    <apex:inputText value="{!sName}"></apex:inputText>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection >
+                    <apex:outputLabel value="Phone"></apex:outputLabel>
+                    <apex:inputText value="{!sPhone}"></apex:inputText>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection>
+                    <apex:outputLabel value="Account1"></apex:outputLabel>
+                    <apex:inputField value="{!CA.Account1__c}"></apex:inputField>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+            
+            <apex:pageBlock id="block2">
+                
+                <apex:pageBlockSection >
+                    <apex:outputLabel value="Account2"></apex:outputLabel>
+                    <apex:inputField value="{!CA.Account2__c}"></apex:inputField>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection >
+                    <apex:outputLabel value="Account3"></apex:outputLabel>
+                    <apex:inputField value="{!CA.Account3__c}"></apex:inputField>
+                </apex:pageBlockSection>
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!Do_Refresh}" value="Refres Account" reRender="block2" />
+                </apex:pageBlockButtons>
+                <apex:commandButton action="{!Do_Refresh}" value="aaaaaaa"  />
+            </apex:pageBlock>
+            <br/>
+            <ul>
+                <li>2. API Spec更新版</li>
+                <li>3. 客製化面儲存時，如果背景有其他系統已經存入資訊，是否會造成編輯衝突的問題？</li>
+            </ul>
+            <br/>
+            1<br/>
+            2<br/>
+            3<br/>
+            4<br/>
+            5<br/>
+            6<br/>
+            7<br/>
+            8<br/>
+            9<br/>
+            10<br/>
+            1<br/>
+            2<br/>
+            3<br/>
+            4<br/>
+            5<br/>
+            6<br/>
+            7<br/>
+            8<br/>
+            9<br/>
+            20<br/>
+            1<br/>
+            2<br/>
+            3<br/>
+            4<br/>
+            5<br/>
+            6<br/>
+            7<br/>
+            8<br/>
+            9<br/>
+            30<br/>
+            1<br/>
+            2<br/>
+            3<br/>
+            4<br/>
+            5<br/>
+            6<br/>
+            7<br/>
+            8<br/>
+            9<br/>
+            <img src="https://mail.google.com/mail/u/0?ui=2&amp;ik=33d822e291&amp;attid=0.0.1&amp;permmsgid=msg-f:1667173085468279535&amp;th=1722fd16926dc2ef&amp;view=fimg&amp;sz=s0-l75-ft&amp;attbid=ANGjdJ8ymgZcvWaQSCIhmmuF6z_siHr24uSCLirPGYChFw1c8c0cpRR71hxY1kdgGZiFc8n5bNp5GQP09rDCN4JGqV2TZniTCaifTG5783bzHmP_aq8RGRhCC4hvLUY&amp;disp=emb&amp;realattid=ii_kad4ljh80"
+                alt="image.png" width="305" height="483" data-image-whitelisted="" class="CToWUd a6T" tabindex="0">
+            </img>
+        </div>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

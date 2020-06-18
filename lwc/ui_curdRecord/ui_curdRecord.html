@@ -1,0 +1,46 @@
+<template>
+    <template if:true={account.data}>
+        <lightning-card title="Create/Read/Update/Delete Account Record" icon-name="standard:account">
+            <lightning-record-edit-form record-id={recordId} object-api-name={objectApiName}>
+                <lightning-input label="Id" disabled value={account.data.fields.Id.value}></lightning-input>
+                <lightning-input label="Name" value={account.data.fields.Name.value} 
+                    data-field="Name"></lightning-input>
+                <lightning-input label="Phone" value={account.data.fields.Phone.value} 
+                    data-field="Phone"></lightning-input>                
+                <lightning-input label="Site" value={account.data.fields.Site.value} 
+                    data-field="Site"></lightning-input>                
+                <lightning-input-field field-name="Rating" 
+                    data-field="Rating"></lightning-input-field>
+                <lightning-input-field field-name="Active__c" data-field="Active__c"></lightning-input-field>
+                <br />
+                Acc 2 : <br />
+                <template if:true={acc1}>
+                    hoho: <p key={acc1.Id}>{acc1.Name} : {acc1.Phone} </p>    
+                        <!-- Name : {accName} -->
+                </template>
+                <template if:false={acc1}>
+                    acc1 error:
+                </template>
+                <br />
+                Accs :                
+                <template if:true={accs}>
+                    <template for:each={accs} for:item="acc">
+                        <p key={acc.Id}>{acc.Name} : {acc.Phone} </p>
+                    </template>
+                </template>        
+                <br />                
+                <!-- -->
+                <lightning-button label="Read Account" onclick={ReadAccount}></lightning-button>&nbsp;&nbsp;
+                <lightning-button label="Create Account" onclick={CreateAccount}></lightning-button>
+                <br/>
+                <lightning-button label="Update Account" onclick={UpdateAccount}></lightning-button>&nbsp;&nbsp;
+                <lightning-button label="Delete Account" onclick={DeleteAccount}></lightning-button>
+                
+                
+            </lightning-record-edit-form>
+        </lightning-card>
+    </template>
+    
+    
+    
+</template>

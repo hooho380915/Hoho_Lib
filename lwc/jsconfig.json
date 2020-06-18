@@ -1,0 +1,77 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/e2_helloBinding": [
+                "e2_helloBinding/e2_helloBinding.js"
+            ],
+            "c/e4_compositionBasics": [
+                "e4_compositionBasics/e4_compositionBasics.js"
+            ],
+            "c/e6_simplePub": [
+                "e6_simplePub/e6_simplePub.js"
+            ],
+            "c/e6_simpleSub": [
+                "e6_simpleSub/e6_simpleSub.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/e3_contactTile": [
+                "e3_contactTile/e3_contactTile.js"
+            ],
+            "c/e5_paginator": [
+                "e5_paginator/e5_paginator.js"
+            ],
+            "c/e5_eventSimple": [
+                "e5_eventSimple/e5_eventSimple.js"
+            ],
+            "c/e4_compositionIteration": [
+                "e4_compositionIteration/e4_compositionIteration.js"
+            ],
+            "c/e7_apexWireMethodToProperty": [
+                "e7_apexWireMethodToProperty/e7_apexWireMethodToProperty.js"
+            ],
+            "c/errorPanel": [
+                "errorPanel/errorPanel.js"
+            ],
+            "c/ldsUtils": [
+                "ldsUtils/ldsUtils.js"
+            ],
+            "c/e8_apexWireMethodToFunction": [
+                "e8_apexWireMethodToFunction/e8_apexWireMethodToFunction.js"
+            ],
+            "c/e9_recordViewFormDynamicContact": [
+                "e9_recordViewFormDynamicContact/e9_recordViewFormDynamicContact.js"
+            ],
+            "c/uiRecordapi_updateRecord": [
+                "uiRecordapi_updateRecord/uiRecordapi_updateRecord.js"
+            ],
+            "c/ui_getRecord": [
+                "ui_getRecord/ui_getRecord.js"
+            ],
+            "c/ui_createRecord": [
+                "ui_createRecord/ui_createRecord.js"
+            ],
+            "c/uiRecordapi_compositionBasics": [
+                "uiRecordapi_compositionBasics/uiRecordapi_compositionBasics.js"
+            ],
+            "c/ui_updateRecord": [
+                "ui_updateRecord/ui_updateRecord.js"
+            ],
+            "c/ui_curdRecord": [
+                "ui_curdRecord/ui_curdRecord.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

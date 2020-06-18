@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="CompositionIteration" icon-name="custom:custom57">
+        <div class="slds-m-around_medium">
+            <!--
+               1.template 內可以再包template
+               2.template 有 for:each 屬性
+               3.使用for:each 時, 要給一個唯一值, 這個值要給元件的key ,key為內定關鍵字,不需要用@api 定義
+           -->
+            <template for:each={myContacts} for:item="myContact">
+                <c-e3_contact-tile key={myContact.Id} contact={myContact}></c-e3_contact-tile>
+            </template>
+        </div>
+    </lightning-card>
+</template>

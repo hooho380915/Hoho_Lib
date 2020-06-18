@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="CompositionBasics" icon-name="custom:custom57">
+        <div class="slds-m-around_medium">
+            <!--
+               這邊 contact-tile 裡面之所以有 contact memo 是因為
+               有定義了 @api contact , @api memo
+           -->
+            <c-e3_contact-tile contact={myContact} memo={myMemo}>
+            </c-e3_contact-tile>
+        </div>
+    </lightning-card>
+</template>
