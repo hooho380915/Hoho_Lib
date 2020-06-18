@@ -8,9 +8,8 @@
 * History
 * <Date>        <Authors Name> 	<Brief Description of Change>
 * 20200318        Alex Chen       Create
-* 單一檔案 修改 Lib_Chatter
-* 20200612        Alex Chen       Modify
-* 流程改善- Git Study -Commit 2   => LIB_Chatter-Date-DB
+* 20200618      Alex Chen           Modify
+* 流程改善- Git Study -V2 => LIB_Chatter-Date-DB
 ************************************** */
 public without sharing class Lib_Chatter {
 

@@ -11,21 +11,8 @@
 * History
 * <Date>        <Authors Name>      <Brief Description of Change>
 * 20200318      Alex Chen           Modify
-* 20200612        Alex Chen       Modify
-* 流程改善- Git Study -Commit 2   => LIB_Chatter-Date-DB
-* 20200612        Alex Chen       Modify
-* 流程改善- Git Study -Commit 3   => LIB_DB-Email-Log
-* 20200612        Alex Chen       Modify
-* 流程改善- Git Study -Commit 4   => LIB_DB-Math-ReUseQuery
-* 20200612        Alex Chen       Modify
-* 流程改善- Git Study -Master 1   => LIB_D
-* Barnch 3
-* Barnch 5
-* Barnch 7
-* Master 13
-* Master Push 2 
-* Master Push 3 
-* Master Push 6
+* 20200618      Alex Chen           Modify
+* 流程改善- Git Study -V2 => LIB_Chatter-Date-DB
 ------------------------------------------------------------ */
 public inherited sharing class Lib_DB {                    
     /** 
