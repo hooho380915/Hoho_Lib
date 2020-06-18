@@ -13,6 +13,8 @@
 * 20200318      Alex Chen           Modify
 * 20200618      Alex Chen           Modify
 * 流程改善- Git Study -V2 => LIB_Chatter-Date-DB
+* 20200618      Alex Chen           Modify
+* 流程改善- Git Study -P1 => LIB_Date-DB
 ------------------------------------------------------------ */
 public inherited sharing class Lib_DB {                    
     /** 
