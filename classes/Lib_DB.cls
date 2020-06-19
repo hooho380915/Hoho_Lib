@@ -21,6 +21,8 @@
 * 流程改善- Git Study -G1 => LIB_Date-DB
 * 20200619      Alex Chen           Modify
 * 流程改善- Git Study -G2 => LIB_DB
+* 20200619      Alex Chen           Modify
+* 流程改善- Git Study -G3 => LIB_DB
 ------------------------------------------------------------ */
 public inherited sharing class Lib_DB {                    
     /** 
